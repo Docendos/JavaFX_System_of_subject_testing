@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="675.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TestingController">
+    <children>
+        <AnchorPane layoutY="95.0" prefHeight="290.0" prefWidth="672.0" style="-fx-background-color: #7B68EE;">
+            <children>
+                <ImageView fitHeight="125.0" fitWidth="184.0" layoutX="549.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/tester.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="NextButton" layoutX="556.0" layoutY="239.0" mnemonicParsing="false" onAction="#next" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: FF4500;" text="Next" textFill="#6b158a">
+                    <font>
+                        <Font name="Harlow Solid Italic" size="16.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="questionField" layoutX="23.0" layoutY="64.0" prefHeight="38.0" prefWidth="471.0" />
+            <Label layoutX="57.0" layoutY="22.0" text="Here is the question, try to answer )">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="19.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Radio_AnswButton1" layoutX="32.0" layoutY="150.0" mnemonicParsing="false" onAction="#check_first_btn">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Radio_AnswButton2" layoutX="32.0" layoutY="232.0" mnemonicParsing="false" onAction="#check_second_btn">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Radio_AnswButton3" layoutX="302.0" layoutY="150.0" mnemonicParsing="false" onAction="#check_third_btn">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Radio_AnswButton4" layoutX="302.0" layoutY="232.0" mnemonicParsing="false" onAction="#check_fourth_btn">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </RadioButton>
+            </children>
+        </AnchorPane>
+        <Label layoutX="253.0" layoutY="2.0" prefHeight="90.0" prefWidth="193.0" text="Aprobatio">
+            <font>
+                <Font name="Harlow Solid Italic" size="46.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.23759999871253967" green="0.4583532214164734" blue="0.7200000286102295" opacity="0.7599999904632568" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+      <Button fx:id="QuitButton" layoutX="564.0" layoutY="28.0" mnemonicParsing="false" onAction="#quit" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: FF4500;" text="Quit" textFill="#6b158a">
+         <font>
+            <Font name="Harlow Solid Italic" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

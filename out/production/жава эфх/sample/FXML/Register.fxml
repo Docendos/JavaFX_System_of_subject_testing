@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+    <children>
+        <AnchorPane layoutY="95.0" prefHeight="305.0" prefWidth="700.0" style="-fx-background-color: #7B68EE;">
+            <children>
+                <TextField fx:id="LoginField" layoutX="419.0" layoutY="72.0" prefHeight="26.0" prefWidth="221.0" promptText="Login" style="-fx-background-color: #7B38EE;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="PasswordField" layoutX="419.0" layoutY="145.0" prefHeight="26.0" prefWidth="222.0" promptText="Password" style="-fx-background-color: #7B38EE;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="SignUpButton" layoutX="299.0" layoutY="253.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="79.0" style="-fx-background-color: FF4500;" text="Sign up" textFill="#6b158a">
+                    <font>
+                        <Font name="Harlow Solid Italic" size="16.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="SignUpName" layoutX="29.0" layoutY="45.0" prefHeight="26.0" prefWidth="221.0" promptText="Name" style="-fx-background-color: #7B38EE;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="SignUpLastName" layoutX="29.0" layoutY="99.0" prefHeight="26.0" prefWidth="221.0" promptText="Last Name" style="-fx-background-color: #7B38EE;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="SignUpPatronymic" layoutX="29.0" layoutY="164.0" prefHeight="26.0" prefWidth="221.0" promptText="Patronymic" style="-fx-background-color: #7B38EE;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="Back2Button" layoutX="614.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: FF4500;" text="Back" textFill="#6b158a">
+               <font>
+                  <Font name="Harlow Solid Italic" size="13.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="253.0" layoutY="2.0" prefHeight="90.0" prefWidth="193.0" text="Aprobatio">
+            <font>
+                <Font name="Harlow Solid Italic" size="46.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.23759999871253967" green="0.4583532214164734" blue="0.7200000286102295" opacity="0.7599999904632568" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

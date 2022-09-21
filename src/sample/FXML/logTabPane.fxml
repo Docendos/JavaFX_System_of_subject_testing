@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="859.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.logTabPaneController">
+    <tabs>
+        <Tab fx:id="tab1Tab" text="Normal Log">
+
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="670.0">
+               <children>
+                  <TextArea fx:id="normalLogShow" layoutX="9.0" layoutY="7.0" prefHeight="637.0" prefWidth="845.0" />
+               </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="tab2Tab" text="Advanced log">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="advancedLogShow" layoutX="10.0" layoutY="9.0" prefHeight="634.0" prefWidth="842.0" />
+               </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

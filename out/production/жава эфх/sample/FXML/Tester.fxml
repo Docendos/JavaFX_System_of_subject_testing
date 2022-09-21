@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="706.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TesterController">
+    <children>
+        <AnchorPane layoutY="95.0" prefHeight="306.0" prefWidth="660.0" style="-fx-background-color: #7B68EE;">
+            <children>
+                <TextField fx:id="FildFIO" layoutX="239.0" layoutY="153.0" prefHeight="26.0" prefWidth="221.0" promptText="FIO" style="-fx-background-color: #7B49EE;">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="StartButton" layoutX="284.0" layoutY="217.0" mnemonicParsing="false" onAction="#start" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: FF4500;" text="Start" textFill="#6b158a">
+                    <font>
+                        <Font name="Harlow Solid Italic" size="23.0" />
+                    </font>
+                </Button>
+            <ChoiceBox fx:id="ChoiceBoxSubject" layoutX="40.0" layoutY="75.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="ChoiceBoxNoTest" layoutX="515.0" layoutY="81.0" onMouseClicked="#update" prefWidth="150.0" />
+            <Label layoutX="84.0" layoutY="20.0" text="Thema" textFill="#4f1dac">
+               <font>
+                  <Font name="Harlow Solid Italic" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="27.0" prefHeight="47.0" prefWidth="215.0" text="Name of the test" textFill="#4f1dac">
+               <font>
+                  <Font name="Harlow Solid Italic" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="125.0" fitWidth="184.0" layoutX="300.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/tester.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="BackSampleButton" layoutX="612.0" layoutY="253.0" mnemonicParsing="false" onAction="#toSample" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: FF4500;" text="Back" textFill="#6b158a">
+               <font>
+                  <Font name="Harlow Solid Italic" size="16.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="253.0" layoutY="2.0" prefHeight="90.0" prefWidth="193.0" text="Aprobatio">
+            <font>
+                <Font name="Harlow Solid Italic" size="46.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.23759999871253967" green="0.4583532214164734" blue="0.7200000286102295" opacity="0.7599999904632568" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

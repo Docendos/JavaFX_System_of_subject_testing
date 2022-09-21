@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="373.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.Page2_1">
+    <children>
+        <Button layoutX="421.0" layoutY="82.0" mnemonicParsing="false" onAction="#createPDFForDates" prefHeight="34.0" prefWidth="107.0" text="Date in pdf">
+            <font>
+                <Font name="Arial" size="17.0" />
+            </font>
+        </Button>
+        <Label layoutX="421.0" layoutY="46.0" text="See in pdf" textFill="#d90c0c">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="58.0" layoutY="14.0" prefHeight="32.0" prefWidth="522.0" text="The latest date of creating ask for every asker">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="46.0" text="See in table" textFill="#d90c0c">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Button fx:id="datesButton" layoutX="68.0" layoutY="82.0" mnemonicParsing="false" onAction="#createTableForDates" prefHeight="34.0" prefWidth="107.0" text="Date in tb">
+            <font>
+                <Font name="Arial" size="17.0" />
+            </font>
+        </Button>
+        <Label layoutX="58.0" layoutY="123.0" prefHeight="32.0" prefWidth="522.0" text="Lists of students and askers with commentars">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="256.0" prefHeight="32.0" prefWidth="522.0" text="Lists of students with min/max marks and comments">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Button fx:id="testsButton" layoutX="68.0" layoutY="204.0" mnemonicParsing="false" onAction="#createTableForStudents" prefHeight="34.0" prefWidth="107.0" text="In tb">
+            <font>
+                <Font name="Arial" size="17.0" />
+            </font>
+        </Button>
+        <Label layoutX="62.0" layoutY="160.0" text="See in table" textFill="#d90c0c">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Button layoutX="415.0" layoutY="204.0" mnemonicParsing="false" onAction="#createPDFforStudents" prefHeight="34.0" prefWidth="120.0" text="In pdf">
+            <font>
+                <Font name="Arial" size="17.0" />
+            </font>
+        </Button>
+        <Label layoutX="424.0" layoutY="160.0" text="See in pdf" textFill="#d90c0c">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="421.0" layoutY="288.0" text="See in pdf" textFill="#d90c0c">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="288.0" text="See in table" textFill="#d90c0c">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font>
+        </Label>
+        <Button fx:id="marksButton" layoutX="62.0" layoutY="327.0" mnemonicParsing="false" onAction="#createTableForStuds" prefHeight="34.0" prefWidth="120.0" text="Stud-s in tb">
+            <font>
+                <Font name="Arial" size="17.0" />
+            </font>
+        </Button>
+        <Button layoutX="418.0" layoutY="327.0" mnemonicParsing="false" onAction="#createPDFforStuds" prefHeight="34.0" prefWidth="120.0" text="Stud-s in pdf">
+            <font>
+                <Font name="Arial" size="17.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>

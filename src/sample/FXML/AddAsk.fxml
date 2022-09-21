@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="883.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AskController">
+    <children>
+        <AnchorPane layoutY="81.0" prefHeight="430.0" prefWidth="882.0" style="-fx-background-color: #7B68EE;">
+         <children>
+            <TableView fx:id="usersTable" layoutX="25.0" layoutY="97.0" prefHeight="311.0" prefWidth="734.0" style="-fx-alignment: center;">
+              <columns>
+                <TableColumn fx:id="idCol" maxWidth="92.79995536804199" prefWidth="87.19994926452637" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="117.60001373291016" text="NAME" />
+                  <TableColumn fx:id="lastNameCol" prefWidth="110.4000244140625" text="LAST NAME" />
+                  <TableColumn fx:id="middleNameCol" prefWidth="134.4000244140625" text="MIDDLE NAME" />
+                  <TableColumn fx:id="loginCol" prefWidth="77.60000610351562" text="LOGIN" />
+                  <TableColumn fx:id="passwordCol" prefWidth="108.0" text="PASSWORD" />
+                  <TableColumn fx:id="editCol" prefWidth="110.39996337890625" text="Name" />
+              </columns>
+            </TableView>
+            <Button fx:id="Back11Button" layoutX="792.0" layoutY="370.0" mnemonicParsing="false" onAction="#Action" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: FF4500;" text="Back" textFill="#5115a4">
+               <font>
+                  <Font name="Harlow Solid Italic" size="12.0" />
+               </font>
+            </Button>
+            <HBox layoutX="14.0" layoutY="-36.0" prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="90.0" fitWidth="116.0" layoutX="669.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/1291783_android_artificial_artificial%20intelligence_brain_hemisphere_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="108.0" layoutX="766.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/brain.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" layoutX="26.0" layoutY="1.0" prefHeight="100.0" prefWidth="210.0">
+               <children>
+                  <FontAwesomeIconView fill="#fffb07" glyphName="USER_PLUS" onMouseClicked="#getAddView" size="60">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#00f676" glyphName="REFRESH" layoutX="10.0" layoutY="81.0" onMouseClicked="#refreshTable" size="60" text="">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#455a64" glyphName="PRINT" layoutX="79.0" layoutY="81.0" onMouseClicked="#print" size="60">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Button fx:id="toTestersButton" layoutX="769.0" layoutY="23.0" mnemonicParsing="false" onAction="#ToTesters" prefHeight="44.0" prefWidth="104.0" style="-fx-background-color: FF4500;" text="To Testers" textFill="#5115a4">
+               <font>
+                  <Font name="Harlow Solid Italic" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="329.0" layoutY="12.0" text="Askers">
+               <font>
+                  <Font name="Bodoni MT" size="63.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+        <Label layoutX="205.0" prefHeight="78.0" prefWidth="194.0" text="Aprobatio">
+            <font>
+                <Font name="Harlow Solid Italic" size="46.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.23759999871253967" green="0.4583532214164734" blue="0.7200000286102295" opacity="0.7599999904632568" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+          <Label layoutX="558.0" layoutY="17.0" prefHeight="64.0" prefWidth="270.0" text="Rack one's brain" textFill="#982fa8">
+              <font>
+                  <Font name="Harlow Solid Italic" size="38.0" />
+              </font>
+          </Label>
+    </children>
+</AnchorPane>

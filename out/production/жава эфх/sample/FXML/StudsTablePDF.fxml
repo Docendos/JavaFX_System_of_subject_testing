@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="626.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="models.studsTablePDFController">
+    <children>
+        <AnchorPane layoutX="-58.0" prefHeight="375.0" prefWidth="691.0" style="-fx-background-color: #7B68EE;">
+            <children>
+                <TableView fx:id="creaturesTable" layoutX="64.0" layoutY="55.0" prefHeight="327.0" prefWidth="614.0" style="-fx-alignment: center;">
+                    <columns>
+                        <TableColumn fx:id="nameCol" maxWidth="184.80001831054688" prefWidth="138.39999389648438" text="NAME" />
+                        <TableColumn fx:id="lastCol" prefWidth="155.2000274658203" text="LAST" />
+                        <TableColumn fx:id="countCol" prefWidth="153.5999755859375" text="MARK" />
+                        <TableColumn fx:id="textCol" prefWidth="163.20001220703125" text="TEXT" />
+                    </columns>
+                </TableView>
+                <Label layoutX="117.0" layoutY="14.0" prefHeight="32.0" prefWidth="522.0" text="Lists of students with min/max marks and comments">
+                    <font>
+                        <Font name="Bauhaus 93" size="23.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

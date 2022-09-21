@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="95.0" prefHeight="305.0" prefWidth="700.0" style="-fx-background-color: #7B68EE;">
+         <children>
+            <TextField fx:id="LoginField" layoutX="239.0" layoutY="92.0" prefHeight="26.0" prefWidth="221.0" promptText="Login" style="-fx-background-color: #7B38EE;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PasswordField" layoutX="239.0" layoutY="153.0" prefHeight="26.0" prefWidth="222.0" promptText="Password" style="-fx-background-color: #7B38EE;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="239.0" layoutY="10.0" prefHeight="48.0" prefWidth="222.0" text="Authorization" textFill="#982fa8">
+               <font>
+                  <Font name="Harlow Solid Italic" size="38.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignInButton" layoutX="273.0" layoutY="223.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: FF4500;" text="Sign in" textFill="#6b158a">
+               <font>
+                  <Font name="Harlow Solid Italic" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="253.0" layoutY="2.0" prefHeight="90.0" prefWidth="193.0" text="Aprobatio">
+         <font>
+            <Font name="Harlow Solid Italic" size="46.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.23759999871253967" green="0.4583532214164734" blue="0.7200000286102295" opacity="0.7599999904632568" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="RegisterButton" layoutX="575.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#registr" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: FF4500;" text="Register" textFill="#6b158a">
+         <font>
+            <Font name="Harlow Solid Italic" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

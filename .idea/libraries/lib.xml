@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PATH_TO_FX$" />
+      <root url="jar://$PROJECT_DIR$/../лаб3/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../лаб3/fontawesomefx-weathericons-2.0.10-9.1.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/../лаб3" />
+      <root url="jar://$PROJECT_DIR$/../лаб3/fontawesomefx-commons-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/itextpdf-5.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../лаб3" recursive="false" />
+  </library>
+</component>

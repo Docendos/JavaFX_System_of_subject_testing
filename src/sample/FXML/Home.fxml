@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="670.0" style="-fx-background-color: #9932CC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.Home">
+   <children>
+      <AnchorPane layoutY="-8.0" prefHeight="452.0" prefWidth="671.0" style="-fx-background-color: #7B68EE;">
+         <children>
+            <TableView fx:id="testsTable" layoutX="29.0" layoutY="99.0" prefHeight="339.0" prefWidth="596.0" style="-fx-alignment: center;">
+               <columns>
+                  <TableColumn fx:id="idCol" maxWidth="92.79995536804199" prefWidth="39.19997978210449" text="ID" />
+                  <TableColumn fx:id="nameCol" prefWidth="257.60004806518555" text="NAME OF TEST" />
+                  <TableColumn fx:id="themaCol" prefWidth="127.99993896484375" text="THEMA" />
+                  <TableColumn fx:id="editCol" prefWidth="169.5999755859375" text="Name" />
+               </columns>
+            </TableView>
+            <HBox layoutX="14.0" layoutY="-36.0" prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" layoutX="26.0" layoutY="1.0" prefHeight="100.0" prefWidth="138.0">
+               <children>
+                  <FontAwesomeIconView fill="#fffb07" glyphName="PLUS" onMouseClicked="#getAddView" size="60">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#00f676" glyphName="REFRESH" layoutX="10.0" layoutY="81.0" onMouseClicked="#refreshTable" size="60" text="">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Label layoutX="226.0" layoutY="21.0" text="Tests">
+               <font>
+                  <Font name="Bodoni MT" size="47.0" />
+               </font>
+            </Label>
+            <Label layoutX="377.0" layoutY="43.0" text="Search">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchFld" layoutX="431.0" layoutY="39.0" promptText="Keywords..." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

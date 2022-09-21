@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="373.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.Page2">
+   <children>
+      <Button layoutX="421.0" layoutY="82.0" mnemonicParsing="false" onAction="#createPDF" prefHeight="34.0" prefWidth="107.0" text="Asks in pdf">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="421.0" layoutY="46.0" text="See in pdf" textFill="#d90c0c">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="14.0" prefHeight="32.0" prefWidth="522.0" text="How many asks were created by every author">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="46.0" text="See in table" textFill="#d90c0c">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="asksButton" layoutX="68.0" layoutY="82.0" mnemonicParsing="false" onAction="#createTableForAsks" prefHeight="34.0" prefWidth="107.0" text="Asks in tb">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="123.0" prefHeight="32.0" prefWidth="522.0" text="How many tests were passed by every student">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="256.0" prefHeight="32.0" prefWidth="522.0" text="Max mark for every student">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="testsButton" layoutX="68.0" layoutY="204.0" mnemonicParsing="false" onAction="#createTableForTests" prefHeight="34.0" prefWidth="107.0" text="Tests in tb">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="62.0" layoutY="160.0" text="See in table" textFill="#d90c0c">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="415.0" layoutY="204.0" mnemonicParsing="false" onAction="#createPDFforTests" prefHeight="34.0" prefWidth="120.0" text="Tests in pdf">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="424.0" layoutY="160.0" text="See in pdf" textFill="#d90c0c">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="288.0" text="See in pdf" textFill="#d90c0c">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="288.0" text="See in table" textFill="#d90c0c">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="marksButton" layoutX="68.0" layoutY="327.0" mnemonicParsing="false" onAction="#createTableForMarks" prefHeight="34.0" prefWidth="107.0" text="Marks in tb">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="418.0" layoutY="327.0" mnemonicParsing="false" onAction="#createPDFforAsks" prefHeight="34.0" prefWidth="107.0" text="Asks in pdf">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

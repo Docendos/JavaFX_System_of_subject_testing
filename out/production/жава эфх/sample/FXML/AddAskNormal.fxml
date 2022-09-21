@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="models.AddAskController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="375.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ask details" wrappingWidth="237.73754501342773">
+                    <font>
+                        <Font name="Bauhaus 93" size="36.0" />
+                    </font>
+                </Text>
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin></HBox>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="72.0" prefHeight="23.0" prefWidth="375.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="73.33677506446838">
+                    <font>
+                        <Font name="Century Gothic" size="17.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="textFld" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="475.0" />
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <Text layoutX="187.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="116.0" prefHeight="23.0" prefWidth="375.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Level" wrappingWidth="254.93668107986468">
+                    <font>
+                        <Font name="Century Gothic" size="17.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="levelFld" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="294.0" />
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <Text layoutX="187.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="159.0" prefHeight="23.0" prefWidth="375.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="254.9367219209671">
+                    <font>
+                        <Font name="Century Gothic" size="17.0" />
+                    </font>
+                </Text>
+            <DatePicker fx:id="dateCalendarField" prefHeight="26.0" prefWidth="294.0" />
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+      <Label />
+      <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="534.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Subject" wrappingWidth="310.9367206096649">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="ChoiceBoxSubject" prefHeight="26.0" prefWidth="238.0" />
+         </children>
+      </HBox>
+        <Text layoutX="187.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="197.0" prefHeight="23.0" prefWidth="375.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Answer" wrappingWidth="185.33677077293396">
+                    <font>
+                        <Font name="Century Gothic" size="17.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="answerFld" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="362.0" />
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <Text layoutX="187.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="245.0" prefHeight="23.0" prefWidth="375.0">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="86.0" prefWidth="537.0">
+            <children>
+                <Button mnemonicParsing="false" onMouseClicked="#save" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #00E676;" text="Save">
+                    <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="10.0" top="8.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Century Gothic" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="154.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#clean" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: FFFF00;" text="Clean">
+                    <HBox.margin>
+                        <Insets bottom="8.0" left="40.0" right="10.0" top="8.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Century Gothic" size="25.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</VBox>
